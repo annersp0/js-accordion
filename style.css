@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    justify-content: center;
+    background: radial-gradient(circle, rgb(247, 238, 238) -1.9%, rgb(250, 193, 191) 44.9%, rgb(145, 168, 208) 96.1%);
+}
+
+.section {
+    width: 750px;
+    height: 290px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    margin-top: 140px;
+    margin-left: 19%;
+    border-radius: 20px;
+    background-color: rgb(224, 224, 224);
+}
+
+.subs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+    justify-content: space-between;
+}
+
+.subs p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 98%; 
+    position: relative;
+}
+
+.subs p#major::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 97%;
+    height: 1px;
+    background-color: black;
+}
+
+.button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none; 
+    background-color: transparent;
+}
+
+.button:hover {
+    color: rgb(51, 104, 195);
+}
+
+.description {
+    display: none;
+    padding-left: none;
+    padding-right: 15px;
+}
+
+
+.description.visible {
+    display: block;
+}
+
+.minus-sign {
+    display: flex;
+}
